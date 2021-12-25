@@ -1,0 +1,34 @@
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+  "loginname": "admin",
+  "pass": "123"
+}
+
+###
+GET  http://localhost:3001/api/book
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbm5hbWUiOiJhZG1pbiIsImlhdCI6MTYzMDc1MTI0N30.XuCfFWCBFw3YGs6fBFAtzaQOLA_GuZGSUeQ7xk5hvQs
+
+###
+POST  http://localhost:3001/api/book
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbm5hbWUiOiJhZG1pbiIsImlhdCI6MTYzMDc1MTI0N30.XuCfFWCBFw3YGs6fBFAtzaQOLA_GuZGSUeQ7xk5hvQs
+
+{
+  "bookname": "code dao ki su",
+   "author": "Hoang",
+    "quantity": 100
+}
+###
+PUT  http://localhost:3001/api/book
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbm5hbWUiOiJhZG1pbiIsImlhdCI6MTYzMDc1MTI0N30.XuCfFWCBFw3YGs6fBFAtzaQOLA_GuZGSUeQ7xk5hvQs
+
+{
+  "idbook": 4,
+  "bookname": "code dao ki su",
+   "author": "Hoang",
+    "quantity": 100
+}
